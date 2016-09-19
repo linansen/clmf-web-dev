@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<title>个人中心</title>
+
+		<!-- Bootstrap Core CSS -->
+		<link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+		
+		<link href="../bower_components/bootstrap/dist/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+
+		<!-- MetisMenu CSS -->
+		<link href="../bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
+
+		<!-- Custom CSS -->
+		<link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+
+		<!-- Custom Fonts -->
+		<link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+		<link href="../dist/css/mwi_tables/index.css" rel="stylesheet" type="text/css">
+		<style>
+			table td:nth-child(odd){
+				text-align: right;
+			}
+			table td:nth-child(even){
+				text-align: left;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="row-header">
+			<div class="col-lg-offset-2 col-lg-6">
+				<h1 class="page-header"></h1>
+			</div>
+			<!-- /.col-lg-12 -->
+		</div>
+
+		<!-- /.row -->
+		<div class="row-body">
+			
+			<div class="col-lg-8 col-lg-offset-2">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h4>个人信息</h4>
+					</div>
+					<div class="panel-body">
+						<table class="table table-responsive table-striped table-hover">
+							<caption>
+								<label>证件编号：123456</label>
+								<a href="#" data-toggle="modal" data-target="#edit_info_about_staff" class="pull-right">点击修改</a>
+							</caption>
+							<tbody>
+								<tr>
+									<td>姓名：</td>
+									<td>是瑞星</td>
+									<td>姓名拼音：</td>
+									<td>ShiRuiXin</td>
+								</tr>
+								<tr>
+									<td>性别：</td>
+									<td>男</td>
+									<td>身份证号：</td>
+									<td>12345666666666666666</td>
+								</tr>
+								<tr>
+									<td>邮箱：</td>
+									<td>xxchar@163.com</td>
+									<td>手机号码：</td>
+									<td>18826418523</td>
+								</tr>
+								<tr>
+									<td>微信号：</td>
+									<td>18826418523</td>
+									<td>工作组：</td>
+									<td>街机小组</td>
+								</tr>
+								<tr>
+									<td>所属单位：</td>
+									<td>贵阳市外办</td>
+									<td>工作部门：</td>
+									<td>秘书长</td>
+								</tr>
+								<tr>
+									<td colspan="4" style="text-align: center !important;"><h5>住宿信息</h5></td>
+								</tr>
+								<tr>
+									<td>酒店名称：</td>
+									<td>香格里拉酒店</td>
+									<td>酒店地址：</td>
+									<td>自己找</td>
+								</tr>
+								<tr>
+									<td>房型：</td>
+									<td>豪华大床房</td>
+									<td>房号：</td>
+									<td>123</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<!-- /.col-lg-12 -->
+		</div>
+		<!-- /.row -->
+		<div id="edit_info_about_staff" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="top:50px;">
+			<div class="modal-dialog">
+
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4>
+							<span class="fa fa-edit mr10"></span>工作人员信息
+							<div class="pull-right btn-group-sm ">
+								<button class="btn btn-success btn-sm">保存<span class="fa fa-save"></span></button>
+								<button class="btn btn-warning btn-sm" data-dismiss="modal">关闭<span class="fa fa-power-off"></span></button>
+							</div>
+						</h4>
+					</div>
+
+					<div class="modal-body">
+						<table class="table table-hover table-responsive edit_info_about_staff">
+							<tbody>
+								<tr>
+									<td>姓名：</td>
+									<td>
+										<input type="text" name="staff_name" id="" placeholder="请输入姓名" value="" style="width:80%;">
+									</td>
+								</tr>
+								<tr>
+									<td>姓名拼音：</td>
+									<td>
+										<input type="text" name="staff_name" id="" placeholder="请输入姓名" value="" style="width:80%;">
+									</td>
+								</tr>
+								<tr>
+									<td>证件号：</td>
+									<td>
+										<input type="text" name="staff_passport" id="" placeholder="请输入证件号" value="" style="width:80%;" disabled="disabled">
+									</td>
+								</tr>
+								<tr>
+									<td>身份证号：</td>
+									<td>
+										<input type="text" name="staff_passport" id="" placeholder="请输入身份证号" value="" style="width:80%;">
+									</td>
+								</tr>
+								<tr>
+									<td>性别：</td>
+									<td>
+										<label class="mr10"><input type="radio" name="staff_sex" id="" value="">男</label>
+										<label><input type="radio" name="staff_sex" id="" value="">女</label>
+									</td>
+								</tr>
+								<tr>
+									<td>手机号码：</td>
+									<td>
+										<input type="text" name="staff_phone" id="" value="" placeholder="请输入手机号码" style="width:80%;">
+									</td>
+								</tr>
+								<tr>
+									<td>邮箱：</td>
+									<td>
+										<input type="text" name="staff_email" id="" value="" placeholder="请输入邮箱" style="width:80%;" />
+									</td>
+								</tr>
+								<tr>
+									<td>微信：</td>
+									<td>
+										<input type="text" name="staff_weixin" id="" value="" placeholder="请输入微信号"  style="width:80%;"/>
+									</td>
+								</tr>
+								<tr>
+									<td>工作组：</td>
+									<td style="position:absolute;">
+										<input type="text" name="work_group" placeholder="请选择工作组" readonly="readonly" style="width:330px; margin-top:-20px;">
+										<div class="table-tooltip" style="width:160px !important;margin-left:3px !important;padding:5px;">
+											<span><label><input type="checkbox">文秘信息组</label></span>
+											<span><label><input type="checkbox">媒体宣传组</label></span>
+											<span><label><input type="checkbox">注册服务组</label></span>
+											<span><label><input type="checkbox">嘉宾接待组</label></span>
+											<span><label><input type="checkbox">口岸迎送组</label></span>
+											<span><label><input type="checkbox">酒店服务组</label></span>
+											<span><label><input type="checkbox">会场管理组</label></span>
+											<span><label><input type="checkbox">会议服务组</label></span>
+											<span><label><input type="checkbox">展览展示组</label></span>
+											<span><label><input type="checkbox">参观考察组</label></span>
+											<span><label><input type="checkbox">会议平台组</label></span>
+											<span><label><input type="checkbox">志愿服务组</label></span>
+											<span><label><input type="checkbox">交通保障组</label></span>
+											<span><label><input type="checkbox">应急安保组</label></span>
+											<span><label><input type="checkbox">后勤服务组</label></span>
+											<span class="text-center"><button type="button" class="btn btn-sm btn-primary mr5 yesToChose">确认选择</button><button type="button" class="btn btn-sm btn-primary closeTooltip">取消选择</button></span>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>所属单位：</td>
+									<td>
+										<input type="text" name="staff_job" id="" value="" placeholder="请输入单位"  style="width:80%;"/>
+									</td>
+								</tr>
+								<tr>
+									<td>工作部门：</td>
+									<td>
+										<input type="text" name="staff_job" id="" value="" placeholder="请输入部门"  style="width:80%;"/>
+									</td>
+								</tr>
+							</tbody>
+
+						</table>
+
+					</div>
+
+				</div>
+				<!-- /.modal-content -->
+
+			</div>
+
+		</div>
+		
+		<!-- /#page-wrapper -->
+		<!-- jQuery -->
+		<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+
+		<!-- Bootstrap Core JavaScript -->
+		<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+		<!-- Metis Menu Plugin JavaScript -->
+		<script src="../bower_components/metisMenu/dist/metisMenu.min.js"></script>
+
+		<!-- Custom Theme JavaScript -->
+		<script src="../dist/js/sb-admin-2.js"></script>
+		
+		<script src="../dist/js/mwi_tables/index.js"></script>
+		
+		<script src="../bower_components/paginator/paginator.min.js"></script>
+
+		<script src="../dist/js/page/page.js"></script>
+		
+		<script src="../dist/js/mwi_tables/valid.js"></script>
+		<!-- Page-Level Demo Scripts - Tables - Use for reference -->
+		<script type="text/javascript">
+			$('input[name=work_group]').on('click',function(){
+				$(this).next().show();
+			});
+			$('.yesToChose').on('click',function(){
+				var groupbox = $(this).parents('.table-tooltip').find('input[type=checkbox]:checked');
+				var groups = []
+				for(var i=0;i<groupbox.length;i++){
+					var group = $(groupbox).eq(i).parent().text();
+					groups.push(group);
+				}
+				$(this).parents('.table-tooltip').prev('input').val(groups.toString());
+				$(this).parents('.table-tooltip').hide();
+			});
+			$('.closeTooltip').on('click',function(){
+				$(this).parents('.table-tooltip').hide();
+			});
+		</script>
+	</body>
+
+</html>

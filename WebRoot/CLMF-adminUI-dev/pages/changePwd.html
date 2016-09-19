@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<title>个人中心</title>
+
+		<!-- Bootstrap Core CSS -->
+		<link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+		
+		<link href="../bower_components/bootstrap/dist/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+
+		<!-- MetisMenu CSS -->
+		<link href="../bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
+
+		<!-- Custom CSS -->
+		<link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+
+		<!-- Custom Fonts -->
+		<link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+		<link href="../dist/css/mwi_tables/index.css" rel="stylesheet" type="text/css">
+		<style>
+			span.changeInput{
+				display: block;
+				text-align: center;
+				margin-top: 10px;
+			}
+			input{
+				width: 200px !important;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="row-header">
+			<div class="col-lg-offset-2 col-lg-6">
+				<h1 class="page-header"></h1>
+			</div>
+			<div class="col-lg-offset-2 col-lg-6">
+				<h1 class="page-header"></h1>
+			</div>
+			<!-- /.col-lg-12 -->
+		</div>
+
+		<!-- /.row -->
+		<div class="row-body">
+			<div class="col-lg-offset-3 col-lg-6">
+				<form action="" method="post">
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h4>修改密码</h4>
+						</div>
+						<div class="panel-body">
+							<span class="changeInput">
+								旧密码：
+								<input type="password" id="currentPwd" class="check-null">
+							</span>
+							<span class="changeInput">
+								新密码：
+								<input type="password" id="newPwd" class="check-null">
+							</span>
+							<span class="changeInput" style="margin-left: -57px;">
+								再次输入新密码：
+								<input type="password" id="reNewPwd">
+								<label class="ml10 reNewLabel" style="position: absolute; margin-top: 8px;display: none;">两次输入的密码不一致！</label>
+							</span>
+							
+							<span class="changeInput">
+								<button type="button" class="btn btn-primary sub_btn">确认修改</button>
+							</span>
+						</div>
+					</div>
+				</form>
+			</div>
+			<!-- /.col-lg-12 -->
+		</div>
+		<!-- /.row -->
+		<!-- /#page-wrapper -->
+		<!-- jQuery -->
+		<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+
+		<!-- Bootstrap Core JavaScript -->
+		<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+		<!-- Metis Menu Plugin JavaScript -->
+		<script src="../bower_components/metisMenu/dist/metisMenu.min.js"></script>
+
+		<!-- Custom Theme JavaScript -->
+		<script src="../dist/js/sb-admin-2.js"></script>
+		
+		<script src="../dist/js/mwi_tables/index.js"></script>
+		
+		<script src="../dist/js/mwi_tables/valid.js"></script>
+		<!-- Page-Level Demo Scripts - Tables - Use for reference -->
+		<script>
+			$('.sub_btn').on('click',function(){
+				var currentPwd = $('#currentPwd').val();
+				var newPwd = $('#newPwd').val();
+				var reNewPwd = $('#reNewPwd').val();
+				if(currentPwd && newPwd){
+					if(reNewPwd == newPwd){
+						$(this).parents('form').submit();
+					}else{
+						$('.reNewLabel').show();
+					}
+				}else{
+					alert("旧密码和新密码都不能为空！");
+				}
+			});
+			$('#reNewPwd').on('blur',function(){
+				var reNewPwd = $(this).val();
+				var newPwd = $('#newPwd').val();
+				if(reNewPwd != newPwd) $('.reNewLabel').show();
+			}).on('focus',function(){
+				$('.reNewLabel').hide();
+			});
+		</script>
+	</body>
+
+</html>

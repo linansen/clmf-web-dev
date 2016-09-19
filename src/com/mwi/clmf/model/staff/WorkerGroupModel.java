@@ -1,0 +1,1 @@
+package com.mwi.clmf.model.staff;import java.util.List;import com.jfinal.plugin.activerecord.Model;@SuppressWarnings("serial")public class WorkerGroupModel extends Model<WorkerGroupModel> {	public static final WorkerGroupModel wgDao = new WorkerGroupModel();		public List<WorkerGroupModel> groupList(){		return wgDao.find("select * from cf_group");	}}

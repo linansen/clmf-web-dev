@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<title>嘉宾基本信息</title>
+
+		<!-- Bootstrap Core CSS -->
+		<link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+		
+		<!-- MetisMenu CSS -->
+		<link href="../bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
+
+		<!-- Custom CSS -->
+		<link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+
+		<!-- Custom Fonts -->
+		<link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+		<link href="../dist/css/mwi_tables/index.css" rel="stylesheet" type="text/css">
+	</head>
+
+	<body>
+
+		<div class="row-header">
+			<div class="col-lg-offset-2 col-lg-6">
+				<h1 class="page-header"></h1>
+			</div>
+			<!-- /.col-lg-12 -->
+		</div>
+
+		
+		<!-- /.row -->
+		<div class="row-body">
+
+			<div class="col-lg-12">
+
+				<div class="panel panel-primary">
+
+					<div class="panel-heading">
+						<p class="text-capitalize"><span class="fa fa-info-circle fa-2x mr5"></span>嘉宾基本信息</p>
+					</div>
+
+					<!-- /.panel-heading -->
+					<div class="panel-body">
+
+						<table class="table table-striped table-bordered table-hover" cellspacing="0" width="80%">
+
+							<caption>
+
+								<div class="pull-left" id="query">
+									<span>
+										嘉宾姓名：
+										<input type="text" name="select_guest_name" placeholder="请输入嘉宾姓名" class="check-null"/>
+									</span>
+									<span>
+										英文姓名：
+										<input type="text" name="select_guest_name" placeholder="请输入英文姓名" class="check-email check-null"/>
+									</span>
+									<span>
+										国籍：
+										<input type name="select_country" placeholder="请输入国籍">
+									</span>
+
+									<span>
+										单位职务：
+										<input type="text" name="select_guest_name" placeholder="请输入单位职务" />
+									</span>
+									<span>
+										<button class="btn btn-primary">查询<b class="fa fa-search ml5"></b></button>
+										<button class="btn btn-primary" id="ad_query_button">高级查询</button>
+									</span>
+									<span>
+										<label>记录总数：<b class="red-text">10000</b>条</label>
+									</span>
+								</div>
+								<div class="pull-left" id="ad_query">
+									<span>
+										身份证/护照号：
+										<input type="text" name="select_guest_name" placeholder="请输入嘉宾身份证号" />
+									</span>
+									<span>
+										手机号码：
+										<input type="text" name="select_guest_name" placeholder="请输入手机号码" />
+									</span>
+									<span>
+										电子邮件：
+										<input type="text" name="select_guest_email_address" placeholder="请输入电子邮件" />
+									</span>
+									<span>
+										性别：
+										<select>
+											<option>男</option>
+											<option>女</option>
+											<option>其他</option>
+										</select>
+									</span>
+								</div>
+							</caption>
+
+							<thead>
+
+								<tr>
+									<th>序号</th>
+									<th>嘉宾姓名</th>
+									<th>英文姓名</th>
+									<th>国籍</th>
+									<th>身份证号/护照号</th>
+									<th>单位职务</th>
+									<th>性别</th>
+									<th>抵达日期</th>
+									<th>更多操作</th>
+								</tr>
+
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>林岸森</td>
+									<td>Jeson</td>
+									<td>中国</td>
+									<td>372928233333333333</td>
+									<td>广东省省长</td>
+									<td>男</td>
+									<td>2015-07-21</td>
+									<td>
+										<a href="guestDetail.html" class="btn btn-default" data-toggle="modal" data-target="#detail_info_about_guest">查看详情<span class="fa fa-search ml5"></span></a>
+										<a href="editGuestDetail.html" class="btn btn-default ml10" data-toggle="modal" data-target="#edit_info_about_guest">编辑<span class="fa fa-edit ml5"></span></a>
+										<button class="btn btn-default ml10">删除<span class="fa fa-remove ml5"></span></button>
+									</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>林岸森</td>
+									<td>Jeson</td>
+									<td>中国</td>
+									<td>372928233333333333</td>
+									<td>广东省省长</td>
+									<td>男</td>
+									<td>2015-07-21</td>
+									<td>
+										<a href="editGuestDetail.html" class="btn btn-default" data-toggle="modal" data-target="#detail_info_about_guest">查看详情<span class="fa fa-search ml5"></span></a>
+										<a href="editGuestDetail.html" class="btn btn-default ml10" data-toggle="modal" data-target="#edit_info_about_guest">编辑<span class="fa fa-edit ml5"></span></a>
+										<button class="btn btn-default ml10">删除<span class="fa fa-remove ml5"></span></button>
+									</td>
+								</tr>
+
+							</tbody>
+
+						</table>
+
+					</div>
+					<!-- /.panel-body -->
+
+					<div class="panel-footer ">
+						
+						<div class="navbar navbar-default navbar-link">
+							<div class="pull-left mt10 ml10">
+								展示：
+								<select name="select_items">
+									<option value="10">10</option>
+									<option value="20">20</option>
+									<option value="50">50</option>
+									<option value="100">100</option>
+									<option value="500">500</option>
+								</select>
+								数据
+							</div>
+							<div class="pull-left mt10 ml20">
+								跳到第
+								<input type="number" name="select_guest_name" style="width: 70px !important;"/>
+								页
+								<button class="btn btn-primary btn-sm">go</button>
+							</div>
+							<div class="pull-left mt15 ml20">
+								<a href="#">升序</a>
+								<a href="#">降序</a>
+							</div>
+							<ul class="nav nav-tabs nav-tabs-justified pull-right">
+								<li class="disabled"><a href="#">Previous</a>
+								</li>
+								<li class="active"><a href="#">1</a>
+								</li>
+								<li><a href="#">2</a>
+								</li>
+								<li><a href="#">3</a>
+								</li>
+								<li><a href="#">4</a>
+								</li>
+								<li><a href="#">5</a>
+								</li>
+								<li><a href="#">Next</a>
+								</li>
+							</ul>
+
+						</div>
+
+					</div>
+
+				</div>
+				<!-- /.panel -->
+			</div>
+			<!-- /.col-lg-12 -->
+		</div>
+		<!-- /.row -->
+		
+		<!-- /#page-wrapper -->
+		<div id="detail_info_about_guest" class="modal fade modalRefresh" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+
+				<div class="modal-content">
+
+				</div>
+				<!-- /.modal-content -->
+			</div>
+		</div>
+		
+		
+		<div id="edit_info_about_guest" class="modal fade modalRefresh" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+
+				<div class="modal-content">
+
+					
+
+				</div>
+				<!-- /.modal-content -->
+
+			</div>
+
+		</div>
+		<!-- jQuery -->
+		<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+
+		<!-- Bootstrap Core JavaScript -->
+		<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+		<!-- Metis Menu Plugin JavaScript -->
+		<script src="../bower_components/metisMenu/dist/metisMenu.min.js"></script>
+
+		<!-- Custom Theme JavaScript -->
+		<script src="../dist/js/sb-admin-2.js"></script>
+		
+		<script src="../dist/js/mwi_tables/index.js"></script>
+		
+		<script src="../bower_components/paginator/paginator.min.js"></script>
+
+		<script src="../dist/js/page/page.js"></script>
+		
+		<script src="../dist/js/mwi_tables/valid.js"></script>
+		<!-- Page-Level Demo Scripts - Tables - Use for reference -->
+
+	</body>
+
+</html>

@@ -1,0 +1,1 @@
+package com.mwi.clmf.model;import java.util.List;import com.jfinal.plugin.activerecord.Model;@SuppressWarnings("serial")public class EmailTemplateModel extends Model<EmailTemplateModel> {		public static final EmailTemplateModel etDao = new EmailTemplateModel();		public List<EmailTemplateModel> getList(){		return etDao.find("select * from cf_email_template");	}}

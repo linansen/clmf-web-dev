@@ -1,0 +1,193 @@
+body{
+	font-family: "microsoft yahei";
+}
+select{
+	height: 30px;
+	border-radius: 4px;
+}
+label{
+	font-weight: normal !important;
+}
+input[type=text],input[type=number],input[type=password]{
+	width: 130px;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+	color: #555;
+    background-image: none;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	-webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+	-o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+textarea{
+	color: #555;
+    background-image: none;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	-webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+	-o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.width49{
+	width: 49%;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.car-table{
+	text-align: center;
+}
+.car-table th{
+	text-align: center;
+}
+.car-table td{
+	line-height: 2 !important;
+}
+.white-text{
+	color: #fff;
+}
+.red-text{
+	color: #d9534f;
+	font-weight: 600;
+	/*background: #d9534f !important;*/
+}
+.yellow-text{
+	color: #f0ad4e;
+}
+.green-text{
+	color: #5cb85c;
+}
+.infomate{
+	line-height: 100%;
+}
+.carList-div{
+	min-height: 493px;
+}
+.carRight-div{
+	min-height: 400px;
+}
+#page-iframe{
+	margin:0 0 0 260px;
+	height: 970px;
+}
+#page-iframe iframe{
+	height: 100%;
+	margin:0;
+}
+.row-body table,.row-body table th{
+	text-align: center;
+}
+.row-body table td{
+	line-height: 30px !important;
+}
+.row-body table td input{
+	color: #555;
+    background-image: none;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	-webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+	-o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.td100-table td input[type=text]{
+	width: 100%;
+}
+
+.mt5{margin-top:5px;}.mt10{margin-top:10px;}.mt15{margin-top:15px;}.mt20{margin-top:20px;}.mt25{margin-top:25px;}.mt30{margin-top:30px;}
+.mb5{margin-bottom:5px;}.mb10{margin-bottom:10px;}.mb15{margin-bottom:15px;}.mb20{margin-bottom:20px;}.mb25{margin-bottom:25px;}.mb30{margin-bottom:30px;}
+.mr5{margin-right:5px;}.mr10{margin-right:10px;}.mr15{margin-right:15px;}.mr20{margin-right:20px;}.mr25{margin-right:25px;}.mr30{margin-right:30px;}
+.ml5{margin-left:5px;}.ml10{margin-left:10px;}.ml15{margin-left:15px;}.ml20{margin-left:20px;}.ml25{margin-left:25px;}.ml30{margin-left:30px;}
+
+/*************查询****************/
+#query,#ad_query,.add-guest-kind,.query,.ad_query{
+	width: 100%;
+	font-size: 14px;
+	font-family: "microsoft yahei";
+	padding: 15px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+.add-guest-kind a{
+	margin: 2px 2px;
+}
+#ad_query,.ad_query{
+	display: none;
+}
+#query span,#ad_query span,.query span,.ad_query span{
+	margin-right: 15px;
+}
+/*#query input,#ad_query input,.query input,.ad_query input{
+	  width: 130px;
+	  height: 34px;
+	  padding: 6px 12px;
+	  font-size: 14px;
+	  line-height: 1.42857143;
+	  color: #555;
+	  background-color: #fff;
+	  background-image: none;
+	  border: 1px solid #ccc;
+	  border-radius: 4px;
+	  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+	  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}*/
+/*************查询 end****************/
+.table-tooltip{
+	width: 100%;
+	position: relative;
+	background: #fff;
+	z-index: 999; 
+	margin: 0 0 0 -2px; 
+	padding: 0;
+	display: none;
+	border: 1px solid #ddd;
+}
+.table-tooltip span{
+	display: block;
+
+}
+.table-tooltip span:hover{
+	background: #f9f9f9;
+	cursor: pointer;
+}
+.left50{
+	left: 50%;
+}
+.left65{
+	left: 65%;
+}
+.left85{
+	left:85%;
+}
+
+/*******************新增入场规则**********************/
+.setting_area,.show_area{
+	font-size: 14px;
+	font-family: "microsoft yahei";
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+.setting_area{
+	min-height: 100px;
+}
+.modal-header {
+	background-color: #55acee;
+	color: #ffffff;
+}
+ul.pagination a{
+	cursor : pointer;
+}

@@ -1,0 +1,1 @@
+package com.mwi.clmf.service.admin.staff;public class VolunteerService {		public static final VolunteerService vService = new VolunteerService();			}

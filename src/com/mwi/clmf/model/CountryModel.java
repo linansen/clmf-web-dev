@@ -1,0 +1,1 @@
+package com.mwi.clmf.model;import java.util.List;import com.jfinal.plugin.activerecord.Model;@SuppressWarnings("serial")public class CountryModel extends Model<CountryModel> {	public static final CountryModel cDao = new CountryModel();		public List<CountryModel> countryList(){		return cDao.find("select * from cf_country");	}}

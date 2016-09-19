@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>MWI用户注册page</title>
+		<!-- Mobile Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Favicon -->
+		<link rel="stylesheet" href="bootstrap-3.3.4-dist/bootstrap-3.3.4-dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="bootstrap-3.3.4-dist/bootstrap-3.3.4-dist/css/bootstrap-datetimepicker.css" />
+		<!-- Font Awesome CSS -->
+		<link rel="stylesheet" href="font-awesome-4.3.0/css/font-awesome.css" />
+		<!-- Plugins -->
+		<link href="css/animations.css" rel="stylesheet">
+		<!-- Worthy core CSS file -->
+		<link href="css/style.css" rel="stylesheet">
+		<link href="css/cotmer.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<div class="header_blue  navbar navbar-fixed-top fixed-header-on " style="position: absolute;">
+			<div class="container">
+		
+				<div class="row">
+		
+					<div class="col-lg-4">
+		
+						<!-- header-left start -->
+						<!-- ================ -->
+						<div class="left clearfix">
+		
+							<!-- logo -->
+							<div class="logo smooth-scroll  ">
+		
+								<div class="site-name">
+									<a href="#banner">
+										<img id="logo" src="images/logo.png" alt="Worthy" style="width: 15%; height: 15%;" /> 第八届世界华文传媒论坛
+									</a>
+								</div>
+								<div class="site-slogan">
+									<a target="_blank" href="http://htmlcoder.me" style="color:crimson ;">
+										<strong>The Eighth Forum onthe Global Chinese Language Media </strong>
+									</a>
+								</div>
+							</div>
+		
+						</div>
+						<!-- header-left end -->
+		
+					</div>
+					<div class="col-lg-4">
+						<p style="text-align: center; font-size:26px ;" class="lea mt20">注册主要信息</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<div class="row-header">
+			<div class="col-lg-12">
+				<h2 class="page-header">&nbsp;</h2>
+			</div>
+			<!-- /.col-lg-12 -->
+		</div>
+
+		<!-- /.row -->
+		<div class="row-body">
+
+			<!-- /.后台公布的邮件 -->
+			<div class="col-lg-offset-2 col-lg-8" style="min-width:1200px;">
+
+				<div class="panel panel-primary">
+
+					<div class="panel-heading">
+						<h4 class="panel-title">温馨提示：填写完毕请点击下一步，系统自动保存所填信息（带*号为必填项）</h4>
+					</div>
+
+					<!-- /.panel-heading -->
+					<div class="panel-body">
+						<div id="formdiv_0" style="min-height: 700px;">
+							<table class="table table-responsive table-hover table-striped">
+								<caption>
+									<div class="panel-heading text-center">
+										<h4>注册须知</h4>
+									</div>
+								</caption>
+								<tbody>
+									<tr>
+										<td>
+											<textarea rows="15" cols="130" readonly="readonly">
+第八届世界环纹传媒论坛秘书处向所有参加本次论坛的代表致以热烈的欢迎！本文件将为您注册参会提供必要的帮助。
+一、注册及报到时间
+会前注册截止时间： 2015年8月15日24：00
+报到：2015年8月21日-8月22日
+会议：2015年8月22日-8月25日
+二、注册方式
+论坛采用线上注册的形式, 每位参会者需单独填写一份注册表,请参会者按照网页指引填写注册信息。
+三、注册确认
+论坛秘书处收到您的注册表后5个工作日内，通过电子邮件向您寄发“参会注册确认函”，对注册情况予以确认。如果您在提交注册后一周内仍未收到“参会注册确认函”，请与大会秘书处联系。
+四、住宿预订
+本次论坛免收参会费和注册费，住宿费用参会嘉宾自理。请在注册表中“住宿安排”页面录入酒店预订信息，酒店工作人员将通过论坛会议管理平台发送“酒店预订确认函”确认您的酒店是否预订成功。
+五、不可抗力
+由于自然灾害、战争、暴乱、疫病或由政府或法院指令终止等不可抗力影响，论坛组委会有权推迟或取消举办“第八届世界华文传媒论坛”。
+六、联系信息
+如您在参会注册过程中有任何疑问，请致电大会秘书处咨询，联系人：姚敦锋，联系电话：+86 851 87989091，或发送电子邮件至guizhouluntan@chinanews.com.cn。
+											</textarea>
+										</td>
+									</tr>
+									<tr><td><label><input type="checkbox" class="hadRead">我已阅读注册须知</label></td></tr>
+								</tbody>
+							</table>
+							<div class="col-lg-12 text-center" style="position: absolute;top: 730px;">
+								<button type="button" class="btn btn-primary mr10" disabled="disabled">上一步</button>
+								<button type="button" class="btn btn-primary nextTo1">下一步</button>
+							</div>
+						</div>
+						<form>
+						<div id="formdiv_1" class="my-hidden" style="min-height: 700px;">
+							<table class="table table-responsive table-hover table-striped">
+								<caption>
+									<div class="panel-heading text-center">
+										<h4>嘉宾信息</h4>
+									</div>
+								</caption>
+								<tbody>
+									<tr>
+										<td class="text-right">中文姓名：</td>
+										<td>
+											<input type="text" name="guset_name" class="check-null" placeholder="" value=""/>
+										</td>
+										<!--中文用户名开始--->
+										<td class="text-right">英文姓名：</td>
+										<td>
+											<input type="text" name="guset_chinese_name" class="check-null" placeholder="" value=""/>
+										</td>
+									<!--中文用户名结束--->
+									</tr>
+									<tr>
+									<!--性别开始-->
+										<td class="text-right">性别：</td>
+										<td>
+											<label><input type="radio" name="guset_sex" value="男" checked="checked" />男</label>
+											<label><input type="radio" name="guset_sex" value="女" />女</label>
+										</td>
+									<!--性别结束-->
+									<!--护照身份证开始--->
+										<td class="text-right">护照/身份证：</td>
+										<td>
+											<input type="text" name="guset_passport" placeholder="" value="" class="check-ID"/>
+										</td>
+									<!--护照身份证结束--->
+									</tr>
+									<tr>
+										<!--国家地区开始--->
+										<td class="text-right">国家地区：</td>
+										<td>
+											<input type="text" name="guset_country" placeholder="" value="" class="check-null"/>
+										</td>
+									<!--国家地区结束--->
+									<!--机构名称开始--->
+										<td class="text-right">单位中文名称：</td>
+										<td>
+											<input type="text" name="guset_organization" placeholder="" value="" class="check-null"/>
+										</td>
+									<!---机构名称结束--->
+									</tr>
+									<tr>
+									<!--机构中文名称开始--->
+										<td class="text-right">单位英文名称：</td>
+										<td>
+											<input type="text" name="guset_chinese_organization" placeholder="" value=""/>
+										</td>
+									<!---机构中文名称结束--->
+										<td class="text-right">职务：</td>
+										<td>
+											<input type="text" name="guset_career" placeholder="" value=""/>
+										</td>
+									</tr>
+									<tr>
+									<!--联系电话开始--->
+										<td class="text-right">联系电话：</td>
+										<td>
+											<input type="text" name="guset_phone" placeholder="" value=""  class="check-tel"/>
+										</td>
+										<!--联络手机电话开始--->
+										<td class="text-right">联系手机电话：</td>
+										<td>
+											<input type="text" name="guset_telephone" placeholder="" value="" class=""/>
+										</td>
+									<!---联络手机电话结束--->
+									</tr>
+									<tr>
+										<td class="text-right">大陆手机号：</td>
+										<td>
+											<input type="text" name="guset_phone" placeholder="" value=""/>
+										</td>
+										<td class="text-right">微信号：</td>
+										<td>
+											<input type="text" name="guset_telephone" placeholder="" value=""/>
+										</td>
+									</tr>
+									<tr>
+									<!--电子邮箱开始--->
+										<td class="text-right">电子邮箱：</td>
+										<td>
+											<input type="text" name="guset_email" placeholder="" value="" class="check-email"/>
+										</td>
+									<!---电子邮件结束--->
+									<!--地址开始--->
+										<td class="text-right">地址：</td>
+										<td>
+											<input type="text" name="guset_address" placeholder="" value=""/>
+										</td>
+									<!---地址结束--->
+									<!---联系电话结束--->
+									</tr>
+									<tr>
+									<!--邮编开始--->
+										<td class="text-right">邮编：</td>
+										<td>
+											<input type="text" name="guset_postcode" placeholder="" value=""/>
+										</td>
+										<!--联络人开始--->
+										<td class="text-right">传真：</td>
+										<td>
+											<input type="text" name="guset_connector" placeholder="" value=""/>
+										</td>
+									<!---联络人结束--->
+									</tr>
+									<tr>
+										<td class="text-right">联络人：</td>
+										<td>
+											<input type="text" name="guset_connector" placeholder="" value=""/>
+										</td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+									<!--联络人电话开始--->
+										<td class="text-right">联络人电话：</td>
+										<td>
+											<input type="text" name="guset_connector_phone" placeholder="" value=""/>
+										</td>
+									<!---联络人电话结束--->
+									<!--联络人邮件开始--->
+										<td class="text-right">联络人电子邮箱：</td>
+										<td>
+											<input type="text" name="guset_connector_email" placeholder="" value=""/>
+										</td>
+									<!---联络人邮件结束--->
+									</tr>
+									<!---联络人邮件结束--->
+								</tbody>
+							</table>
+							<div class="col-lg-12 text-center" style="position: absolute;top: 730px;">
+								<button type="button" class="btn btn-primary mr10 nextTo0">上一步</button>
+								<button type="button" class="btn btn-primary nextTo2">下一步</button>
+							</div>
+						</div>
+						</form>
+						<div id="formdiv_2" class="my-hidden" style="min-height: 700px;">
+							<table class="table table-responsive table-hover table-striped">
+								<caption>
+									<div class="panel-heading text-center">
+										<h4>行程安排</h4>
+									</div>
+								</caption>
+								<tbody>
+									<tr>
+										<td class="text-right">抵达日期：</td>
+										<td>
+											<input type="text" placeholder="抵达日期" class="datetimepicker-days" id="" name="arrive_day"/>
+										</td>
+										<td class="text-right">抵达时间：</td>
+										<td>
+											<input type="text" placeholder="抵达日期" class="datetimepicker-hours" id="" name="arrive_day"/>
+										</td>
+									</tr>
+									<tr>
+										<td class="text-right">抵达站点：</td>
+										<td>
+											<input type="text" placeholder="抵达站点" class="" id="" name="arrive_day"/>
+										</td>
+										<td class="text-right">抵达航班：</td>
+										<td>
+											<input type="text" placeholder="抵达航班" class="" id="" name="arrive_day"/>
+										</td>
+									</tr>
+									<tr>
+										<td class="text-right">离开日期：</td>
+										<td>
+											<input type="text" placeholder="离开日期" class=" datetimepicker-days" id="" name="arrive_day"/>
+										</td>
+										<td class="text-right">离开时间：</td>
+										<td>
+											<input type="text" placeholder="离开时间" class="datetimepicker-hours" id="" name="arrive_day"/>
+										</td>
+									</tr>
+									<tr>
+										<td class="text-right">离开站点：</td>
+										<td>
+											<input type="text" placeholder="离开站点" class="" id="" name="arrive_day"/>
+										</td>
+										<td  class="text-right">离开航班：</td>
+										<td>
+											<input type="text" placeholder="离开航班" class="" id="" name="arrive_day"/>
+										</td>
+									</tr>
+									<tr>
+										<td class="text-right">离境城市：</td>
+										<td><input type="text" placeholder="离开航班" class="" id="" name="arrive_day"/></td>
+										<td></td>
+										<td></td>
+									</tr>
+									
+								</tbody>
+							</table>
+							<div class="col-lg-12 text-center" style="position: absolute;top: 730px;">
+								<button type="button" class="btn btn-primary mr10 nextTo1">上一步</button>
+								<button type="button" class="btn btn-primary nextTo3">下一步</button>
+							</div>
+						</div>
+						<div id="formdiv_3" class="my-hidden" style="min-height: 700px;">
+							<table class="table table-responsive table-hover table-striped">
+								<caption>
+									<div class="panel-heading text-center">
+										<h4>城市参观</h4>
+									</div>
+								</caption>
+								<tbody>
+									<tr>
+										<td style="padding-left: 10px;width: 30%">
+											是否参观城市：
+											<label>
+												<input type="radio" name="travel" checked="checked"/>是
+											</label>
+											<label>
+												<input type="radio" name="travel"/>否
+											</label>
+										</td>
+										<td>
+											
+										</td>
+									</tr>
+									<tr>
+										<td colspan="2">
+											<table class="table table-responsive table-hover table-striped" style="margin: 0;width: 100%;">
+												<caption>
+													<div class="col-lg-offset-1">
+														<h4>参观地点：</h4>
+													</div>
+												</caption>
+												<tbody>
+													<tr>
+														<td width="30%"></td>
+														<td class="text-left">
+															<label>
+																<input type="radio" name="routeLine" value="" checked="checked">
+																A线：仁怀-赤水-桐梓-遵义-铜仁(贵州北线) 考察时间8月25日-30日
+															</label>
+														</td>
+													</tr>
+													<tr>
+														<td></td>
+														<td class="text-left">
+															<label>
+																<input type="radio" name="routeLine" value="">
+																B线：织金-六盘水－安顺-兴义(贵州西南线) 考察时间8月25日-30日
+															</label>
+														</td>
+													</tr>
+													<tr>
+														<td></td>
+														<td class="text-left">
+															<label>
+																<input type="radio" name="routeLine" value="">
+																C线：独山-荔波-榕江-黎平(贵州东南线) 考察时间8月25日-30日
+															</label>
+														</td>
+													</tr>
+													<tr>
+														<td></td>
+														<td class="text-left">
+															<label>
+																<input type="radio" name="routeLine" value="">
+																D线：汕头华侨试验区-南澳岛-潮州（广东线）考察时间8月25日-30日
+															</label>
+														</td>
+													</tr>
+													<tr>
+														<td></td>
+														<td class="text-left">
+															<label>
+																<input type="radio" name="routeLine" value="">
+																E线：兰州-敦煌-阿克苏-乌鲁木齐（甘肃新疆线）考察时间8月25日-31日
+															</label>
+														</td>
+													</tr>
+													<tr>
+														<td></td>
+														<td class="text-left">
+															<label>
+																<input type="radio" name="routeLine" value="">
+																F线：甘孜-阿坝藏区（四川线） 考察时间8月25日-30日
+															</label>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="col-lg-12 text-center" style="position: absolute;top: 730px;">
+								<button type="button" class="btn btn-primary mr10 nextTo2">上一步</button>
+								<button type="button" class="btn btn-primary nextTo4">下一步</button>
+							</div>
+						</div>
+						<div id="formdiv_4" class="my-hidden" style="min-height: 700px;">
+							<table class="table table-responsive table-hover table-striped">
+								<caption>
+									<div class="panel-heading text-center">
+										<h4>住宿安排</h4>
+									</div>
+								</caption>
+								<tbody>
+									<tr>
+										<td  class="text-right" width="20%">入住日期:</td>
+										<td><input type="text" name="guest_living_time" placeholder="" class="datetimepicker-days"></td>
+										<td class="text-right" width="20%">离店日期：</td>
+										<td><input type="text" name="guest_leaving_time" placeholder="" class="datetimepicker-days"></td>
+									</tr>
+									<tr>
+										<td class="text-right">是否需要无烟楼层：</td>
+										<td>
+											<label><input type="radio" name="living_room_about_smoking" value="smoking" />吸烟楼层</label>
+											<label><input type="radio" name="living_room_about_smoking" value="no_smoking" />不吸烟楼层</label>
+										</td>
+										<td class="text-right"></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td class="text-right">入住房型：</td>
+										<td>
+											<label><input type="radio" name="living_room_type" value="豪华套房" checked="checked"/>豪华套房 </label>
+											<label><input type="radio" name="living_room_type" value="高级套房" />高级套房</label>
+											<label><input type="radio" name="living_room_type" value="高级大床房" />高级大床房</label>
+											<label><input type="radio" name="living_room_type" value="高级双床房" />高级双床房</label>
+										</td>
+										<td class="text-right">同宿人员安排：</td>
+										<td class="chose-accomadates">
+											<label><input type="radio" name="living_same_accomadation_type" value="0"/>指定同宿人员</label>
+											<label><input type="radio" name="living_same_accomadation_type" checked="checked" value="1"/>不与其他人员同宿</label>
+											<label><input type="radio" name="living_same_accomadation_type" value="2"/>大会随机分配同宿人员</label>
+										</td>
+									</tr>
+									<tr style="display: none;">
+										<td colspan="4">
+											<table  width="100%">
+												<tr>
+													<td width="20%">
+														姓名：
+													</td>
+													<td>
+														<input type="text" class="form-control" name="accomadation_name_with_guest" value="" />
+													</td>
+													<td>
+														身份证/护照号码：
+													</td>
+													<td>
+														<input type="text" class="form-control" name="passport_with_guest" value="" />
+													</td>
+												</tr>
+												<tr>
+													<td>同宿人员电子邮件：</td>
+													<td>
+														<input type="text" class="form-control" name="accomadation_email">
+													</td>
+													<td></td>
+													<td></td>
+	
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td  class="text-right">
+											饮食习惯：
+										</td>
+										<td colspan="3" class="text-left">
+											<label>
+												<input type="radio" name="habits" value="" checked="checked"> 无特殊饮食习惯
+											</label>
+											<label>
+												<input type="radio" name="habits" value="">素食
+											</label>
+											<label>
+												<input type="radio" name="habits" value="">清真
+											</label>
+											<label>
+												<input type="radio" name="habits" value="">其他
+												<input type="text" class="" placeholder="其他饮食习惯">
+											</label>
+											
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="col-lg-12 text-center" style="position: absolute;top: 730px;">
+								<button type="button" class="btn btn-primary mr10 nextTo3">上一步</button>
+								<button type="button" class="btn btn-primary nextTo5">下一步</button>
+							</div>
+						</div>
+						<div id="formdiv_5" class="my-hidden" style="min-height: 700px;">
+							<table class="table table-responsive table-hover table-striped">
+								<caption>
+									<div class="panel-heading text-center">
+										<h4>签证申请</h4>
+									</div>
+								</caption>
+								<tbody>
+									<tr>
+										<td style="padding-left: 10px;width: 50%">
+											是否申请签证：
+											<label>
+												<input type="radio" name="visa" checked="checked"/>是，请单独填写《中国签证邀请信信息表》
+											</label>
+											<label>
+												<input type="radio" name="visa"/>否
+											</label>
+										</td>
+										<td>
+											
+										</td>
+									</tr>
+									<tr>
+										<td colspan="2">
+											<table class="table table-responsive table-hover table-striped" style="margin: 0;width: 100%;">
+												<caption>
+													<div class="text-center">
+														<h4>Info About Visa in China</h4>
+													</div>
+												</caption>
+												<tbody>
+													<tr>
+														<td class="text-right">是否申请中国签证：</td>
+														<td>是</td>
+														<td></td>
+														<td></td>
+													</tr>
+													<tr>
+														<td class="text-right">代表团名称：</td>
+														<td>
+															<input type="text" placeholder="代表团名称" class="form-control"/>
+														</td>
+														<td class="text-right">性别：</td>
+														<td>
+															<label><input type="radio" name="guset_sex" value="男" checked="checked" />男</label>
+															<label><input type="radio" name="guset_sex" value="女" />女</label>
+														</td>
+													</tr>
+													<tr>
+														<td class="text-right">出生日期：</td>
+														<td>
+															<input type="text" placeholder="出生日期" class="form-control"/>
+														</td>
+														<td class="text-right">国籍：</td>
+														<td>
+															<input type="text" placeholder="国籍" class="form-control"/>
+														</td>
+													</tr>
+													<tr>
+														<td class="text-right">职业：</td>
+														<td>
+															<input type="text" placeholder="职业" class="form-control"/>
+														</td>
+														<td class="text-right">工作单位：</td>
+														<td>
+															<input type="text" placeholder="工作单位" class="form-control "/>
+														</td>
+													</tr>
+													<tr>
+														<td class="text-right">护照号码：</td>
+														<td>
+															<input type="text" placeholder="护照号码" class="form-control"/>
+														</td>
+														<td class="text-right">护照有效期：</td>
+														<td>
+															<input type="text" placeholder="护照有效期" class="form-control"/>
+														</td>
+													</tr>
+													<tr>
+														<td class="text-right">电子邮箱：</td>
+														<td>
+															<input type="text" placeholder="电子邮箱" class="form-control "/>
+														</td>
+														<td class="text-right">传真：</td>
+														<td>
+															<input type="text" placeholder="传真" class="form-control "/>
+														</td>
+													</tr>
+													<tr>
+														<td class="text-right">联系地址：</td>
+														<td>
+															<input type="text" placeholder="联系地址" class="form-control "/>
+														</td>
+														<td class="text-right">入境日期：</td>
+														<td>
+															<input type="text" placeholder="入籍日期" class="form-control "/>
+														</td>
+													</tr>
+													<tr>
+														<td class="text-right">预计中国境内逗留天数：</td>
+														<td>
+															<input type="text" placeholder="逗留日期" class="form-control "/>
+														</td>
+														<td class="text-right">签发地点：</td>
+														<td>
+															<input type="text" placeholder="签发地点" class="form-control "/>
+														</td>
+													</tr>
+													<tr>
+														<td class="text-right">护照扫描页：</td>
+														<td colspan="3">
+															<input type="file" class="pull-left">
+															<button class="btn-sm btn-info pull-left">上传</button>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="col-lg-12 text-center" style="position: absolute;top: 730px;">
+								<button type="button" class="btn btn-primary mr10 nextTo4">上一步</button>
+								<button type="button" class="btn btn-primary valid-sub-btn">提交注册</button>
+							</div>
+						</div>
+					</div>
+					<!-- /.panel-body -->
+				</div>
+				<!-- /.panel -->
+			</div>
+			<!-- /.col-lg-12 -->
+
+		</div>
+		<!-- /.row -->
+		<!-- /#page-wrapper -->
+		
+			<!-- jQuery -->
+		<script src="plugins/jquery.min.js"></script>
+		<!--<script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>-->
+		<script src="bootstrap-3.3.4-dist/bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
+		<script src="bootstrap-3.3.4-dist/bootstrap-3.3.4-dist/js/bootstrap-datetimepicker.min.js"></script>
+		<!-- Modernizr javascript -->
+		<script type="text/javascript" src="plugins/modernizr.js"></script>
+		<!-- Isotope javascript -->
+		<script type="text/javascript" src="plugins/isotope/isotope.pkgd.min.js"></script>
+		<!-- Backstretch javascript -->
+		<script type="text/javascript" src="plugins/jquery.backstretch.min.js"></script>
+		<!-- Appear javascript -->
+		<script type="text/javascript" src="plugins/jquery.appear.js"></script>
+		<!-- Initialization of Plugins -->
+		<script type="text/javascript" src="js/template.js"></script>
+		<!-- Custom Scripts -->
+		<script type="text/javascript" src="js/custom.js"></script>
+		<script type="text/javascript" src="js/valid.js"></script>
+	</body>
+
+</html>

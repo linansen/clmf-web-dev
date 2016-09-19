@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<title>车辆调配之活动用车</title>
+
+		<!-- Bootstrap Core CSS -->
+		<link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- MetisMenu CSS -->
+		<link href="../bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
+
+		<!-- Custom CSS -->
+		<link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+
+		<!-- Custom Fonts -->
+		<link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+		<link href="../dist/css/mwi_tables/index.css" rel="stylesheet" type="text/css">
+	</head>
+
+	<body>
+		<div class="row-header">
+			<div class="col-lg-offset-2  col-lg-6">
+				<h1 class="page-header"></h1>
+			</div>
+			<!-- /.col-lg-12 -->
+		</div>
+
+		<!-- /.row -->
+		<div class="row-body">
+
+			<div class="col-lg-12">
+				<form action="${contextPath}/ride_log" method="post">
+			
+				<!-- page -->
+				<input type="hidden" class="pageIndex" name="pageNumber" value="2">
+				<input type="hidden" class="pageSize" name="pageSize" value="10">
+				<input type="hidden" class="totalPages" name="totalPage" value="10">
+				<!-- page -->
+
+				<div class="panel panel-primary">
+
+					<div class="panel-heading">
+						<p class="text-capitalize">
+							<span class="fa fa-cab fa-2x mr5"></span>活动用车
+						</p>
+					</div>
+					<!-- /.panel-heading -->
+					<div class="panel-body">
+						<table class="table table-condensed  table-hover table-striped table-responsive " cellspacing="2" width="80%">
+							<caption>
+								<div class="pull-left query">
+									<span>
+										路线内容：
+										<select>
+											<option>A线：仁怀-赤水-桐梓-遵义-铜仁(贵州北线)</option>
+											<option>B线：织金-六盘水－安顺-兴义(贵州西南线)</option>
+											<option>C线：独山-荔波-榕江-黎平(贵州东南线)</option>
+											<option>D线：汕头华侨试验区-南澳岛-潮州(广东线)</option>
+											<option>E线：兰州-敦煌-阿克苏-乌鲁木齐(甘肃新疆线)</option>
+										</select>
+									</span>
+									<span>
+										活动日期：
+										<input type="text" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd',readOnly:true})" placeholder="请选择活动日期">
+									</span>
+									<span>
+										分配状态：
+										<select>
+											<option>全部</option>
+											<option>已分配</option>
+											<option>未分配</option>
+										</select>
+									</span>
+									<span>
+										<button class="btn btn-primary">查询<b class="fa fa-search ml5"></b></button>
+									</span>
+									<span>
+										<label>记录总数：<b class="red-text">10000</b>条</label>
+									</span>
+								</div>
+							</caption>
+							<thead>
+								<tr>
+									<th>序号</th>
+									<th>路线编号</th>
+									<th>路线别名</th>
+									<th>路线名</th>
+									<th>路线内容</th>
+									<th>开始时间</th>
+									<th>结束时间</th>
+									<th>分配状态</th>
+									<th width="15%">指定司机</th>
+									<th width="15%">指定车辆</th>
+									<th>操作</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>001</td>
+									<td>A</td>
+									<td>贵州北线</td>
+									<td>仁怀-赤水-桐梓-遵义-铜仁</td>
+									<td>2015-8-6</td>
+									<td>2015-8-8</td>
+									<td>已分配</td>
+									<td class="staff" width="15%" style="position: absolute;">
+										史锐鑫(18826418523)
+										<div class="table-tooltip">
+											<span>史锐鑫(18826418523)</span>
+											<span>史锐鑫(18826418523)</span>
+											<span>史锐鑫(18826418523)</span>
+										</div>
+									</td>
+									<td class="staff" width="15%" style="position: relative;">
+										SUV(GY0010)
+										<div class="table-tooltip" style="position: absolute;">
+											<span>SUV(GY0010)</span>
+											<span>SUV(GY0010)</span>
+											<span>SUV(GY0010)</span>
+										</div>
+									</td>
+									<td>
+										<a href="distributeCar_modal.html" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#chose_staff">分配车辆</a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<!-- /.panel-body -->
+
+					<div class="panel-footer ">
+						<div class="navbar navbar-default navbar-link">
+							<div class="pull-left mt25 ml10">
+								展示：
+								<select name="select_items" class="pageSizeSelect">
+									<option value="10">10</option>
+									<option value="20">20</option>
+									<option value="50">50</option>
+									<option value="100">100</option>
+									<option value="500">500</option>
+								</select>
+								数据
+							</div>
+							<div class="pull-left mt30 ml20">
+								<a href="#">升序</a>
+								<a href="#">降序</a>
+							</div>
+							<div class="nav nav-tabs nav-tabs-justified pull-right">
+								<ul class="paginator nav nav-tabs nav-tabs-justified pull-right">
+								</ul>
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+				</form>
+				<!-- /.panel -->
+			</div>
+			<!-- /.col-lg-12 -->
+		</div>
+		<!-- /.row -->
+
+		</div>
+		<!-- /#page-wrapper -->
+
+		<div id="chose_staff" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="top:50px !important;">
+			<div class="modal-dialog" style="width: 1600px;">
+				<div class="modal-content"></div>
+				<!-- /.modal-content -->
+			</div>
+		</div>
+
+		<!-- jQuery -->
+		<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+
+		<!-- Bootstrap Core JavaScript -->
+		<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+		
+		<script src="../bower_components/My97DatePicker/WdatePicker.js"></script>
+		<!-- Metis Menu Plugin JavaScript -->
+		<script src="../bower_components/metisMenu/dist/metisMenu.min.js"></script>
+
+		<!-- Custom Theme JavaScript -->
+		<script src="../dist/js/sb-admin-2.js"></script>
+		
+		<script src="../dist/js/mwi_tables/index.js"></script>
+		
+		<script src="../bower_components/paginator/paginator.min.js"></script>
+
+		<script src="../dist/js/page/page.js"></script>
+		
+		<script src="../dist/js/mwi_tables/valid.js"></script>
+		<!-- Page-Level Demo Scripts - Tables - Use for reference -->
+		
+
+	</body>
+
+</html>

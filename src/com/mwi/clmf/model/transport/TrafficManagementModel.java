@@ -1,0 +1,1 @@
+package com.mwi.clmf.model.transport;import com.jfinal.plugin.activerecord.Model;@SuppressWarnings("serial")public class TrafficManagementModel extends Model<TrafficManagementModel> {		public static final TrafficManagementModel tmDao = new TrafficManagementModel();		}

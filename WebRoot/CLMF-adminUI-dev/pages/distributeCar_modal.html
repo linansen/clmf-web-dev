@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>分配车辆和司机</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+
+  </head>
+  
+  <body>
+    	<div class="modal-content">
+    		<form action="">
+			<div class="modal-header" style="background-color: rgba(30,40,80,0.8); height: 50px;">
+				<h5 class="modal-title pull-left white-text" id="myModalLabel">分配车辆和司机</h5>
+				<div class="pull-right btn-group-sm">
+					<button class="btn btn-danger">保存<span class="fa fa-chain"></span>
+					</button>
+					<button class="btn btn-warning" data-dismiss="modal">关闭<span class="fa fa-power-off"></span>
+					</button>
+				</div>
+				<input name="" value="">
+				<input name="" value="">
+				<input name="" value="">
+			</div>
+			</form>
+			<div class="modal-body">
+				<div class="text-center">
+					<label class="red-text">请注意选择的司机和车辆的顺序，系统将按顺序一对一进行匹配</label>
+				</div>
+				<div class="col-lg-6">
+					<div class="add-guest-kind">
+						<div>
+							<span>
+								选择司机：
+							</span>
+							<span class="name_btn" id="choseDriver">
+								<a type="button" class="btn btn-default btn-sm name_btn_a">史锐鑫</a>
+								<a type="button" class="btn btn-default btn-sm">史锐鑫</a>
+								<a type="button" class="btn btn-default btn-sm">史锐鑫</a>
+							</span>
+							<span class="ml20">
+								<button type="button" class="btn btn-primary add_driver_btn">添加司机</button>
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="add-guest-kind">
+						<div>
+							<span>
+								选择车辆：
+							</span>
+							<span class="name_btn" id="choseCar">
+								<a type="button" class="btn btn-default btn-sm">SUV</a>
+								<a type="button" class="btn btn-default btn-sm">SUV</a>
+								<a type="button" class="btn btn-default btn-sm">SUV</a>
+							</span>
+							<span class="ml20">
+								<button type="button" class="btn btn-primary add_car_btn">添加车辆</button>
+							</span>
+						</div>
+					</div>
+				</div>
+				<iframe src="distributeCar_iframe.jsp" style="width: 100%; min-height: 710px;" scrolling="auto" frameborder="0" seamless></iframe>
+			</div>
+		</div>
+  </body>
+</html>

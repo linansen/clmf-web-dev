@@ -1,0 +1,1 @@
+package com.mwi.clmf.controller.admin.transport;import com.jfinal.core.Controller;public class VehicleTaskController extends Controller {		public void index(){			}}

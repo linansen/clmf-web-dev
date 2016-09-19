@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<title>任务用车</title>
+
+		<!-- Bootstrap Core CSS -->
+		<link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- MetisMenu CSS -->
+		<link href="../bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
+
+		<!-- Custom CSS -->
+		<link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+
+		<!-- Custom Fonts -->
+		<link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+		<!--<link rel="stylesheet" href="../assets/css/style.css" >-->
+		<!--index.css-->
+		<link rel="stylesheet" href="../dist/css/mwi_tables/index.css">
+
+	</head>
+
+	<body>
+		<div class="row-header">
+			<div class="col-lg-offset-2 col-lg-8">
+				<h1 class="page-header"></h1>
+			</div>
+		</div>
+		<!-- /.row -->
+		<div class="row-body">
+			<div class="col-lg-12">
+				<form action="" method="post">
+			
+				<!-- page -->
+				<input type="hidden" class="pageIndex" name="pageNumber" value="2">
+				<input type="hidden" class="pageSize" name="pageSize" value="10">
+				<input type="hidden" class="totalPages" name="totalPage" value="10">
+				<!-- page -->
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<p class="text-capitalize"><span class="fa fa-info-circle fa-2x"></span><span class="ml10">任务用车</span>
+						</p>
+					</div>
+					<!-- /.panel-heading -->
+					<div class="panel-body">
+						<table class="table table-striped table-hover" cellspacing="0" width="80%">
+							<caption>
+								<div class="pull-left query">
+									<span>
+										任务名称：
+										<input type="text" placeholder="请输入任务名称">
+									</span>
+									<span>
+										任务日期：
+										<input type="text" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd',readOnly:true})" placeholder="请选择活动日期">
+									</span>
+									<span>
+										任务日期：
+										<input type="text"placeholder="请输入任务描述">
+									</span>
+									<span>
+										分配状态：
+										<select>
+											<option>全部</option>
+											<option>已分配</option>
+											<option>未分配</option>
+										</select>
+									</span>
+									<span>
+										<button class="btn btn-primary">查询<b class="fa fa-search ml5"></b></button>
+									</span>
+									<span>
+										<label>记录总数：<b class="red-text">10000</b>条</label>
+									</span>
+									<span class="pull-right">
+										<button type="button" class="btn btn-success" data-toggle="modal" data-target="#change_info">新增任务<b class="fa fa-plus ml5"></b></button>
+										<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#delTask">批量删除任务</button>
+									</span>
+								</div>
+							</caption>
+							<thead class="text-center">
+								<tr>
+									<th><label>全选<input type="checkbox" class="checkAll"></label></th>
+									<th>序号</th>
+									<th>派车类别</th>
+									<th>活动名称</th>
+									<th>开始时间</th>
+									<th>结束时间</th>
+									<th width="15%">分配司机</th>
+									<th width="15%">分配车辆</th>
+									<th>操作</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><input type="checkbox"></td>
+									<td>1</td>
+									<td>活动派车</td>
+									<td class="activity_name">欢迎酒会</td>
+									<td>2015-07-14 15:15:15</td>
+									<td>2015-07-14 15:15:16</td>
+									<td class="staff" width="15%" style="position: absolute;">
+										史锐鑫(18826418523)
+										<div class="table-tooltip">
+											<span>史锐鑫(18826418523)</span>
+											<span>史锐鑫(18826418523)</span>
+											<span>史锐鑫(18826418523)</span>
+										</div>
+									</td>
+									<td class="staff" width="15%" style="position: relative;">
+										SUV(GY0010)
+										<div class="table-tooltip" style="position: absolute;">
+											<span>SUV(GY0010)</span>
+											<span>SUV(GY0010)</span>
+											<span>SUV(GY0010)</span>
+										</div>
+									</td>
+									<td>
+										<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#change_info">修改信息</button>
+										<a href="distributeCar_modal.html" class="btn btn-sm btn-info" data-toggle="modal" data-target="#chose_car">分配车辆</a>
+										<button type="button" class="btn btn-sm btn-danger" data-toggle="modal" data-target="#delTask">删除任务</button>
+									</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox"></td>
+									<td>1</td>
+									<td>活动派车</td>
+									<td class="activity_name">欢迎酒会</td>
+									<td>2015-07-14 15:15:15</td>
+									<td>2015-07-14 15:15:16</td>
+									<td class="staff" width="15%" style="position: absolute;">
+										史锐鑫(18826418523)
+										<div class="table-tooltip">
+											<span>史锐鑫(18826418523)</span>
+											<span>史锐鑫(18826418523)</span>
+											<span>史锐鑫(18826418523)</span>
+										</div>
+									</td>
+									<td class="staff" width="15%" style="position: relative;">
+										SUV(GY0010)
+										<div class="table-tooltip" style="position: absolute;">
+											<span>SUV(GY0010)</span>
+											<span>SUV(GY0010)</span>
+											<span>SUV(GY0010)</span>
+										</div>
+									</td>
+									<td>
+										<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#change_info">修改信息</button>
+										<a href="distributeCar_modal.html" class="btn btn-sm btn-info" data-toggle="modal" data-target="#chose_car">分配车辆</a>
+										<button type="button" class="btn btn-sm btn-danger" data-toggle="modal" data-target="#delTask">删除任务</button>
+									</td>
+								</tr>
+								
+							</tbody>
+						</table>
+					</div>
+					<!-- /.panel-body -->
+					<div class="panel-footer ">
+						<div class="navbar navbar-default navbar-link">
+							<div class="pull-left mt25 ml10">
+								展示：
+								<select name="select_items" class="pageSizeSelect">
+									<option value="10">10</option>
+									<option value="20">20</option>
+									<option value="50">50</option>
+									<option value="100">100</option>
+									<option value="500">500</option>
+								</select>
+								数据
+							</div>
+							<div class="pull-left mt30 ml20">
+								<a href="#">升序</a>
+								<a href="#">降序</a>
+							</div>
+							<div class="nav nav-tabs nav-tabs-justified pull-right">
+								<ul class="paginator nav nav-tabs nav-tabs-justified pull-right">
+								</ul>
+							</div>
+
+						</div>
+
+					</div>
+					<!-- /.modal-content -->
+				</div>
+			</div>
+			<!-- /.panel -->
+		</div>
+		<!-- /#page-wrapper -->
+		<div id="change_info" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header" style="background-color: rgba(30,40,80,0.8); height: 50px;">
+						<h5 class="modal-title pull-left white-text" id="myModalLabel">修改活动信息</h5>
+						<div class="pull-right btn-group-sm mb30">
+							<button class="btn btn-success">保存<span class="fa fa-save"></span>
+							</button>
+							<button class="btn btn-warning" data-dismiss="modal">关闭<span class="fa fa-power-off"></span>
+							</button>
+						</div>
+					</div>
+					<div class="modal-body">
+						<table class="table table-striped table-bordered table-hover car-table">
+							<tbody>
+								<tr>
+									<td class="text-right">任务名称：</td>
+									<td class="text-left">
+										<input type="text" name="">
+									</td>
+								</tr>
+								<tr>
+									<td class="text-right">派车类别：</td>
+									<td class="text-left">
+										<label>
+											<input type="radio" name="activity_car">活动配车</label>
+										<label>
+											<input type="radio" name="activity_car">贵宾配车</label>
+										<label>
+											<input type="radio" name="activity_car">临时用车</label>
+									</td>
+								</tr>
+								<tr>
+									<td class="text-right">活动时间：</td>
+									<td class="text-left">
+										<input type="text" name="" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd',readOnly:true})"/>至
+										<input type="text" name="" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd',readOnly:true})"/>
+									</td>
+								</tr>
+								<tr>
+									<td class="text-right">任务描述：</td>
+									<td class="text-left">
+										<textarea cols="30" rows="5"></textarea>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="chose_car" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="top:50px !important;">
+			<div class="modal-dialog" style="width: 1600px;">
+				<div class="modal-content"></div>
+				<!-- /.modal-content -->
+			</div>
+		</div>
+		<div class="modal fade" id="delTask" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="margin-top:15%;">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+							&times;
+						</button>
+						<h4 class="modal-title" id="myModalLabel">
+													删除任务
+						</h4>
+					</div>
+					<div class="modal-body text-center">
+						<div class="text-center text-info">
+							确定要删除任务吗？
+						</div>
+						<div class="text-center mt20">
+							<button class="btn btn-danger mr10">确定</button>
+							<button class="btn btn-success" data-dismiss="modal" aria-hidden="true">取消</button>
+						</div>
+					</div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+			<!-- /.modal -->
+		</div>
+
+		<!-- jQuery -->
+		<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+
+		<!-- Bootstrap Core JavaScript -->
+		<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+		
+		<script src="../bower_components/My97DatePicker/WdatePicker.js"></script>
+		<!-- Metis Menu Plugin JavaScript -->
+		<script src="../bower_components/metisMenu/dist/metisMenu.min.js"></script>
+
+		<!-- Custom Theme JavaScript -->
+		<script src="../dist/js/sb-admin-2.js"></script>
+		
+		<script src="../dist/js/mwi_tables/index.js"></script>
+		
+		<script src="../bower_components/paginator/paginator.min.js"></script>
+
+		<script src="../dist/js/page/page.js"></script>
+		
+		<script src="../dist/js/mwi_tables/valid.js"></script>
+		<!-- Page-Level Demo Scripts - Tables - Use for reference -->
+	</body>
+
+</html>

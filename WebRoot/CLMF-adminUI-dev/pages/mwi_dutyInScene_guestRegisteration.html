@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<title>现场报到嘉宾报到</title>
+
+		<!-- Bootstrap Core CSS -->
+		<link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- MetisMenu CSS -->
+		<link href="../bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
+
+		<!-- Custom CSS -->
+		<link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+
+		<!-- Custom Fonts -->
+		<link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+		<link href="../dist/css/mwi_tables/index.css" rel="stylesheet" type="text/css">
+	</head>
+
+	<body>
+
+		<div class="row-header">
+			<div class="col-lg-offset-2  col-lg-6">
+				<h1 class="page-header"></h1>
+			</div>
+			<!-- /.col-lg-12 -->
+		</div>
+
+		<!-- /.row -->
+		<div class="row-body">
+
+			<div class=" col-lg-12">
+
+				<div class="panel panel-primary">
+
+					<div class="panel-heading">
+						<p class="text-capitalize"><span class="fa fa-info-circle fa-2x"></span>&nbsp;嘉宾现场报到</p>
+					</div>
+
+					<!-- /.panel-heading -->
+					<div class="panel-body">
+
+						<ul id="myTab" class="nav nav-pills ">
+							<li class="active">
+								<a href="#home" data-toggle="tab">
+
+                                                                           中央领导
+
+                                 </a>
+							</li>
+							<li><a href="#home" data-toggle="tab">副部级以上级别</a>
+							</li>
+							<li><a href="#home" data-toggle="tab">贵州省贵阳市领导</a>
+							</li>
+
+							<li class="dropdown">
+								<a href="home" id="myTabDrop1" class="dropdown-toggle" data-toggle="dropdown">
+
+                                    	贵州省贵阳市嘉宾   <b class="caret"></b>
+
+                                    </a>
+								<ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1">
+									<li><a href="#jmeter" tabindex="-1" data-toggle="tab">贵阳市直单位</a>
+									</li>
+									<li><a href="#ejb" tabindex="-1" data-toggle="tab">贵阳省直单位</a>
+									</li>
+								</ul>
+							</li>
+
+							<li class="dropdown">
+								<a href="#" id="myTabDrop1" class="dropdown-toggle" data-toggle="dropdown">
+
+                                    	贵州省贵阳市参会华文媒体嘉宾  <b class="caret"></b>
+
+                                    </a>
+								<ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1">
+									<li><a href="#jmeter" tabindex="-1" data-toggle="tab">贵阳市直单位</a>
+									</li>
+									<li><a href="#ejb" tabindex="-1" data-toggle="tab">贵阳省直单位</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+
+						<div id="myTabContent" class="tab-content">
+							<div class="tab-pane fade in active" id="home">
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										嘉宾签到列表
+									</div>
+
+								</div>
+								<div class="panel-body">
+									<form action="#" method="get">
+										<table class="table table-hover table-striped table-responsive">
+											<caption>
+												<div class="pull-left">
+													姓名：
+													<input type="text" name="guest_name" placeholder="查询名字" />&nbsp; 省份证/护照:
+													<input type="text" name="guest_passport" placeholder="身份证/护照" />&nbsp; 所有:
+													<select>
+														<option>工作人员</option>
+														<option>志愿者</option>
+														<option>参会嘉宾</option>
+													</select>&nbsp;
+													<button type="button" onclick="">查询&nbsp;<span class="fa fa-flask" style="color: #500A6F;"></span>
+													</button>
+
+												</div>
+											</caption>
+											<thead>
+												<tr>
+													<th>序号</th>
+													<th>工作人员</th>
+													<th>工作人员接待单位</th>
+													<th>接待工作人员联系方式</th>
+
+													<th>嘉宾类别</th>
+													<th>嘉宾参会类型</th>
+													<th>嘉宾姓名</th>
+													<th>嘉宾类型</th>
+													<th>省份证/护照号码</th>
+
+													<th>房号</th>
+													<th>预计抵达时间</th>
+													<th>抵达地点</th>
+													<th>航班或车次</th>
+													<th>实际抵达时间</th>
+
+												</tr>
+											</thead>
+											<tbody>
+
+												<tr>
+													<td>1</td>
+													<td>
+														<select name="volunteer">
+															<option>张佳涛</option>
+															<option>林岸丽</option>
+															<option>史瑞鑫</option>
+															<option>史瑞鑫</option>
+														</select>
+													</td>
+													<td>贵阳市侨务办</td>
+													<td>15626478967</td>
+
+													<td>嘉宾</td>
+													<td>世界华文论坛</td>
+
+													<td>参会嘉宾</td>
+													<td>Tina</td>
+													<td>演讲</td>
+													<td>445224199107280399</td>
+													<td>Y4078</td>
+
+													<td>
+														<input type="datetime" name="pre_arrive_time" placeholder="2015-8-9">
+													</td>
+													<td>
+														<select name="arrive_position">
+															<option>贵阳机场</option>
+															<option>贵阳火车站</option>
+
+														</select>
+													</td>
+													<td>GY6734</td>
+													<td>2015-8-6</td>
+												</tr>
+
+												<tr>
+													<td>1</td>
+													<td>
+														<select name="volunteer">
+															<option>张佳涛</option>
+															<option>林岸丽</option>
+															<option>史瑞鑫</option>
+															<option>史瑞鑫</option>
+														</select>
+													</td>
+													<td>贵阳市侨务办</td>
+													<td>15626478967</td>
+
+													<td>嘉宾</td>
+													<td>世界华文论坛</td>
+
+													<td>参会嘉宾</td>
+													<td>Tina</td>
+													<td>演讲</td>
+													<td>445224199107280399</td>
+													<td>Y4078</td>
+
+													<td>
+														<input type="datetime" name="pre_arrive_time" placeholder="2015-8-9">
+													</td>
+													<td>
+														<select name="arrive_position">
+															<option>贵阳机场</option>
+															<option>贵阳火车站</option>
+
+														</select>
+													</td>
+													<td>GY6734</td>
+													<td>2015-8-6</td>
+												</tr>
+
+											</tbody>
+
+										</table>
+									</form>
+								</div>
+							</div>
+
+							<div class="tab-pane fade" id="ios">
+
+							</div>
+							<div class="tab-pane fade" id="jmeter">
+
+							</div>
+							<div class="tab-pane fade" id="ejb">
+
+							</div>
+						</div>
+
+					</div>
+					<!-- /.panel-body -->
+
+				</div>
+				<!-- /.panel -->
+			</div>
+			<!-- /.col-lg-12 -->
+		</div>
+		<!-- /.row -->
+
+		</div>
+		<!-- /#page-wrapper -->
+
+		<!---编辑嘉宾信息 ---->
+		<div id="edit_info_about_guest" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+
+				<div class="modal-content">
+
+					<div class="modal-header" style="background-color: rgba(30,40,80,0.8); height: 50px;">
+
+						<h5 class="modal-title pull-left" id="myModalLabel">
+
+                                编辑嘉宾信息
+
+              
+
+            </h5>
+						<div class="pull-right btn-group-sm ">
+							<button class="btn btn-default btn-sm">删除<span class="fa fa-chain"></span>
+							</button>
+							<button class="btn btn-default btn-sm">保存<span class="fa fa-save"></span>
+							</button>
+							<button class="btn btn-default btn-sm" data-dismiss="modal">关闭<span class="fa fa-power-off"></span>
+							</button>
+						</div>
+
+					</div>
+
+					<div class="modal-body">
+
+						<ul id="myTab" class="nav nav-tabs ">
+
+							<li><a href="#accomodation_about_guest" data-toggle="tab">住宿安排</a>
+							</li>
+
+						</ul>
+
+						<div id="myTabContent" class="tab-content">
+
+							<div class="tab-pane fade" id="accomodation_about_guest">
+
+								<table class="table table-striped  table-hover table-responsive">
+
+									<tbody>
+
+										<tr>
+
+											<td>入住日期:</td>
+
+											<td>
+												<input type="datetime" name="guest_living_time" placeholder="2015-8-4">
+											</td>
+
+										</tr>
+
+										<tr>
+											<td>离店日期：</td>
+
+											<td>
+												<input type="datetime" name="guest_leaving_time" placeholder="2015-8-8">
+											</td>
+
+										</tr>
+
+										<tr>
+											<td>入住房型：</td>
+
+											<td>
+												<input type="radio" name="living_room_type" value="豪华套房" />豪华套房 &nbsp; &nbsp;
+												<input type="radio" name="living_room_type" value="高级套房" />高级套房 &nbsp; &nbsp;
+												<input type="radio" name="living_room_type" value="高级大床房" />高级大床房 &nbsp; &nbsp;
+												<input type="radio" name="living_room_type" value="高级双床房" />高级双床房 &nbsp; &nbsp;
+											</td>
+
+										</tr>
+
+										<tr>
+											<td>同宿人员安排：</td>
+
+											<td>
+
+												<input type="radio" name="living_same_accomadation_type" value="only_accomadation_with_others" id="only_accomodation_about_guest" />指定同宿人员&nbsp;&nbsp;
+												<input type="radio" name="living_same_accomadation_type" checked="checked" value="no_accomadation_with_others" id="no_accomodation_about_guest" />不与其他人员同宿&nbsp;&nbsp;
+												<input type="radio" name="living_same_accomadation_type" value="random_accomadation_with_others" id="random_accomodation_about_guest" />大会随机分配同宿人员&nbsp;&nbsp;
+
+											</td>
+
+										</tr>
+
+										<tr id="only_accomodation_about_guest_info" style="display: none;">
+											<td colspan="2">
+												<table>
+
+													<tr>
+														<td>
+															姓名：
+														</td>
+														<td>
+															<input type="text" name="accomadation_name_with_guest" value="" />
+														</td>
+													</tr>
+
+													<tr>
+														<td>
+															身份证/护照号码：
+														</td>
+														<td>
+															<input type="text" name="passport_with_guest" value="" />
+														</td>
+													</tr>
+													<tr>
+														<td>同宿人员电子邮件：</td>
+														<td>
+															<input type="email" name="accomadation_email"> &nbsp;
+															<button type="button" onclick=""><span class="fa fa-envelope-square"></span>发邮件</button>
+														</td>
+
+													</tr>
+
+												</table>
+											</td>
+										</tr>
+
+										<tr>
+											<td>是否需要无烟楼层：</td>
+
+											<td>
+												<input type="radio" name="living_room_about_smoking" value="smoking" />吸烟楼层 &nbsp; &nbsp;
+												<input type="radio" name="living_room_about_smoking" value="no_smoking" />不吸烟楼层&nbsp; &nbsp;
+
+											</td>
+
+										</tr>
+
+									</tbody>
+
+								</table>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+				<!-- /.modal-content -->
+
+			</div>
+
+		</div>
+
+		<div id="check_info_about_guest" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+			<div class="modal-dialog">
+
+				<div class="modal-content">
+
+					<div class="modal-header" style="background-color: rgba(30,40,80,0.8); height: 50px;">
+
+						<h5 class="modal-title pull-left" id="myModalLabel">
+
+                                嘉宾审核
+
+              
+
+            </h5>
+
+						<div class="pull-right btn-group-sm ">
+							<button class="btn btn-default">审核<span class="fa fa-chain"></span>
+							</button>
+							<button class="btn btn-default" data-dismiss="modal">关闭<span class="fa fa-power-off"></span>
+							</button>
+						</div>
+
+					</div>
+
+					<div class="modal-body">
+
+					</div>
+
+					<table class="table table-condensed table-responsive table-hover">
+
+						<thead>
+							<tr>
+								<th>类别</th>
+								<th>嘉宾</th>
+								<th>同宿人员</th>
+							</tr>
+						</thead>
+
+						<tbody>
+
+							<tr>
+								<td>姓名：</td>
+								<td>
+									<input type="text" name="guset_name" placeholder="linansen" disabled="disabled">
+								</td>
+								<td>
+									<input type="text" name="austom_name" placeholder="">
+								</td>
+							</tr>
+
+							<tr>
+								<td>证件号码：</td>
+								<td>
+									<input type="text" name="guset_passport" placeholder="F0K1256" disabled="disabled">
+								</td>
+								<td>
+									<input type="text" name="austom_name" placeholder="">
+								</td>
+							</tr>
+
+							<tr>
+								<td>性别：</td>
+								<td>
+									<input type="text" name="guset_sex" placeholder="男" disabled="disabled">
+								</td>
+								<td>
+									<input type="text" name="austom_sex" placeholder="">
+								</td>
+							</tr>
+
+							<tr>
+								<td>参会类别：</td>
+								<td>
+									<input type="text" name="guset_meeting_type" placeholder="贵阳" disabled="disabled">
+								</td>
+								<td>
+									<input type="text" name="austom_meeting_type" placeholder="">
+								</td>
+							</tr>
+
+							<tr>
+								<td>使用语言：</td>
+								<td>
+									<input type="text" name="guset_lang" placeholder="English">
+								</td>
+								<td>
+									<input type="text" name="austom_lang" placeholder="">
+								</td>
+							</tr>
+
+							<tr>
+								<td>酒店审核状态：</td>
+								<td>
+									<input type="text" name="guset_hotel_status" placeholder="" value="审核转态">
+								</td>
+								<td>
+									<input type="text" name="austom_hotel_status" placeholder="" value="">
+								</td>
+							</tr>
+
+							<tr>
+								<td>入住房型：</td>
+								<td>
+									<input type="radio" name="guset_hotel_room_type" placeholder="" value="" checked="checked">豪华套房
+									<br>
+									<input type="radio" name="guset_hotel_room_type" placeholder="" value="">高级套房
+									<br>
+									<input type="radio" name="guset_hotel_room_type" placeholder="" value="">高级大床房
+									<br>
+									<input type="radio" name="guset_hotel_room_type" placeholder="" value="">高级双床房
+								</td>
+								<td>
+									<input type="radio" name="austom_hotel_room_type" placeholder="" value="" checked="checked">豪华套房
+									<br>
+									<input type="radio" name="austom_hotel_room_type" placeholder="" value="">高级套房
+									<br>
+									<input type="radio" name="austom_hotel_room_type" placeholder="" value="">高级大床房
+									<br>
+									<input type="radio" name="austom_hotel_room_type" placeholder="" value="">高级双床房
+
+								</td>
+
+							</tr>
+							<tr>
+								<td colspan="3" style="text-align: center; color: red; ">
+									<small>剩余房数:高级豪华房:21间,高级套房:18间,高级大床房:200间</small>
+								</td>
+							</tr>
+							<tr>
+								<td>住宿安排：</td>
+								<td>
+									<input type="radio" name="guset_hotel_room_arrangement" placeholder="" value="" checked="checked">不与其他人员同宿
+									<br>
+									<input type="radio" name="guset_hotel_room_arrangement" placeholder="" value="">大会随机分配同宿人员
+									<br>
+									<input type="radio" name="guset_hotel_room_arrangement" placeholder="" value="">指定同宿人员
+									<br>
+
+								</td>
+								<td>
+
+									<input type="radio" name="austom_hotel_room_arrangement" placeholder="" value="" checked="checked">不与其他人员同宿
+									<br>
+									<input type="radio" name="austom_hotel_room_arrangement" placeholder="" value="">大会随机分配同宿人员
+									<br>
+									<input type="radio" name="austom_hotel_room_arrangement" placeholder="" value="">指定同宿人员
+									<br>
+
+								</td>
+
+							</tr>
+
+							<tr>
+								<td>
+									入住日期：
+								</td>
+								<td>
+									<input type="date" name="guest_living_date" placeholder="2015-2-5" value="" />
+								</td>
+								<td>
+									<input type="date" name="austom_living_date" placeholder="2015-2-5" value="" />
+								</td>
+
+							</tr>
+
+							<tr>
+
+								<td>
+									离开日期：
+								</td>
+								<td>
+									<input type="date" name="guest_leaving_date" placeholder="2015-2-5" value="" />
+								</td>
+								<td>
+									<input type="date" name="austom_leaving_date" placeholder="2015-2-5" value="" />
+								</td>
+
+							</tr>
+
+							<tr>
+								<td>
+									是否发送邮件：
+								</td>
+								<td>
+									<input type="radio" name="guest_send_email" value="" />是
+								</td>
+								<td>
+									<input type="radio" name="austom_send_email" value="" />否
+								</td>
+
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!-- /.modal-content -->
+
+			</div>
+
+			<!-- jQuery -->
+			<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+
+			<!-- Bootstrap Core JavaScript -->
+			<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+			<!-- Metis Menu Plugin JavaScript -->
+			<script src="../bower_components/metisMenu/dist/metisMenu.min.js"></script>
+
+			<!-- Custom Theme JavaScript -->
+			<script src="../dist/js/sb-admin-2.js"></script>
+
+			<!-- Page-Level Demo Scripts - Tables - Use for reference -->
+			<script type="text/javascript">
+				$(document).ready(function() {
+					$("#passport_ok").click(function() {
+						$("#passport_info").show();
+					});
+					$("#passport_no").click(function() {
+						$("#passport_info").hide();
+					});
+					$("#after_meet_visit_ok").click(function() {
+						$("#select_visit_info").hide();
+					});
+					$("#after_meet_visit_no").click(function() {
+						$("#select_visit_info").show();
+					});
+					$("#only_accomodation_about_guest").click(function() {
+						$("#only_accomodation_about_guest_info").show();
+					});
+					$("#no_accomodation_about_guest").click(function() {
+						$("#only_accomodation_about_guest_info").hide();
+					});
+					$("#random_accomadation_with_others").click(function() {
+						$("#only_accomodation_about_guest_info").hide();
+					});
+					$("#guest_no_pass").click(function() {
+						$("#refuse_reason").show();
+						$("#email_info").show();
+					});
+					$("#guest_pass").click(function() {
+						$("#refuse_reason").hide();
+						$("#email_info").show();
+					});
+					$("#guest_no_pass_no_login").click(function() {
+						$("#refuse_reason").hide();
+						$("#email_info").hide();
+					});
+				});
+			</script>
+
+	</body>
+
+</html>

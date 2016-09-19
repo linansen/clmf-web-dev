@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<title>嘉宾详细信息编辑</title>
+	</head>
+
+	<body>
+		<div class="modal-dialog">
+			<div class="modal-content">
+	
+				<div class="modal-header" style="background-color: rgba(30,40,80,0.8); height: 50px;">
+	
+					<h5 class="modal-title pull-left white-text" id="myModalLabel">编辑嘉宾信息</h5>
+					<div class="pull-right btn-group-sm ">
+						<button class="btn btn-success">保存<span class="fa fa-save"></span></button>
+						<button class="btn btn-warning" data-dismiss="modal">关闭<span class="fa fa-power-off"></span></button>
+					</div>
+	
+				</div>
+	
+				<div class="modal-body">
+					<ul id="myTab1" class="nav nav-tabs">
+						<li class="active"><a href="#edit_info_guest" data-toggle="tab">个人信息</a></li>
+						<li><a href="#edit_passport_about_guest" data-toggle="tab">签证信息</a></li>
+						<li><a href="#edit_activity_about_guest" data-toggle="tab">活动安排</a></li>
+						<li><a href="#edit_accomodation_about_guest" data-toggle="tab">住宿安排</a></li>
+						<li><a href="#edit_traval_about_guest" data-toggle="tab">行程安排</a></li>
+					</ul>
+		
+					<div id="myTabContent1" class="tab-content">
+			
+						<div class="tab-pane fade in active row-body" id="edit_info_guest">
+		
+							<table class="table  table-hover table-striped table-responsive">
+								<tbody>
+									<tr>
+										<!--姓名开始--->
+										<td>英文姓名：</td>
+										<td>
+											<input type="text" name="guset_name" placeholder="请输入英文姓名"  value="" style="width: 100%;" />
+										</td>
+										<!--姓名结束--->
+										<!--中文用户名开始--->
+										<td>中文姓名：</td>
+										<td>
+											<input type="text" name="guset_chinese_name"  placeholder="请输入中文姓名" value="" style="width: 100%;" />
+										</td>
+										<!--中文用户名结束--->
+									</tr>
+									
+									<tr>
+										<!--职务开始--->
+										<td>职务：</td>
+										<td>
+											<input type="text" name="guset_career" placeholder="请输入职务" value="" style="width: 100%;" />
+										</td>
+										<!---职务结束--->
+										<!--性别开始-->
+										<td>性别：</td>
+										<td>
+											<label><input type="radio" name="guset_sex" value="男" />男</label>
+											<label><input type="radio" name="guset_sex" value="女" />女</label>
+										</td>
+										<!--性别结束-->
+									</tr>
+									<tr>
+										<!--护照身份证开始--->
+										<td>护照/身份证：</td>
+										<td>
+											<input type="text" name="guset_passport"  placeholder="护照/身份证号" value="" style="width: 100%;" />
+										</td>
+										<!--护照身份证结束--->
+										<!--国家地区开始--->
+										<td>国籍：</td>
+										<td>
+											<input type="text" placeholder="国籍">
+										</td>
+										<!--国家地区结束--->
+									</tr>
+									<!--机构名称开始--->
+									<tr>
+										<td>机构英文名称(单位)：</td>
+										<td>
+											<input type="text" name="guset_organization" placeholder="请输入机构英文名称" value="" style="width: 100%;" />
+										</td>
+										<!--机构中文名称开始--->
+										<td>机构中文名称：</td>
+										<td>
+											<input type="text" name="guset_chinese_organization" placeholder="请输入机构中文名称" value="" style="width: 100%;" />
+										</td>
+										<!---机构中文名称结束--->
+									</tr>
+									<!---机构名称结束--->
+									<!--联系电话开始--->
+									<tr>
+										<td>联系电话：</td>
+										<td>
+											<input type="text" name="guset_phone"  placeholder="请输入联系电话" value="" style="width: 100%;" />
+										</td>
+										<!--联络手机电话开始--->
+										<td>联系手机号码：</td>
+										<td>
+											<input type="text" name="guset_telephone"  placeholder="请输入手机号码" value="" style="width: 100%;" />
+										</td>
+										<!---联络手机电话结束--->
+									</tr>
+									<!---联系电话结束--->
+									<!--电子邮箱开始--->
+									<tr>
+										<td>电子邮箱：</td>
+										<td>
+											<input type="email" name="guset_email" placeholder="请输入电子邮箱"  value="" style="width: 100%;" />
+										</td>
+										<td></td>
+										<td></td>
+									</tr>
+									<!---电子邮件结束--->
+		
+									<!--地址开始--->
+									<tr>
+										<td>地址：</td>
+										<td>
+											<input type="text" name="guset_address" placeholder="请输入地址" value="" style="width: 100%;" />
+										</td>
+										<!--邮编开始--->
+										<td>邮编：</td>
+										<td>
+											<input type="number" name="guset_postcode" placeholder="请输入邮编" value="" style="width: 100%;" />
+										</td>
+										<!---邮编结束--->
+									</tr>
+									<!---地址结束--->
+		
+									
+		
+									<!--联络人开始--->
+									<tr>
+										<td>联络人：</td>
+										<td>
+											<input type="text" name="guset_connector" placeholder="请输入联络人姓名" value="" style="width: 100%;" />
+										</td>
+										<!--联络人电话开始--->
+										<td>联络人电话：</td>
+										<td>
+											<input type="text" name="guset_connector_phone" placeholder="请输入联络人电话" value="" style="width: 100%;" />
+										</td>
+										<!---联络人电话结束--->
+									</tr>
+									<!---联络人结束--->
+									<!--联络人邮件开始--->
+									<tr>
+										<td>联络人电子邮箱：</td>
+										<td>
+											<input type="email" name="guset_connector_email" placeholder="请输入联络人邮箱" value="" style="width: 100%;" />
+										</td>
+										<td></td>
+										<td></td>
+									</tr>
+									<!---联络人邮件结束--->
+		
+								</tbody>
+		
+							</table>
+		
+						</div>
+		
+						<div class="tab-pane fade row-body" id="edit_passport_about_guest">
+		
+							<table class="table table-striped  table-hover table-responsive text-right">
+								<caption class="text-center">
+									<div>
+										<label><input type="radio" id="passport_ok" name="passport_select" checked="checked">需要申请签证</label>
+										<label><input type="radio" id="passport_no" name="passport_select" class="ml20">不需要申请签证</label>
+									</div>
+								</caption>
+								<tbody>
+									<tr>
+										<td width="20%">名：</td>
+										<td width="30%">
+											<input type="text" name="guest_name" placeholder="请输入名字" value=""  />
+										</td>
+										<td width="20%">姓：</td>
+										<td width="30%">
+											<input type="text" name="guest_name" placeholder="请输入姓" value=""  />
+										</td>
+									</tr>
+									<tr>
+										<td>性别：</td>
+										<td>
+											<input type="radio" name="guset_sex" value="男" checked="checked" />男
+											<input type="radio" name="guset_sex" value="女" />女
+										</td>
+										<td>出生日期：</td>
+										<td>
+											<input type="text" class="datetimepicker-days" placeholder="请输入出生日期">
+										</td>
+									</tr>
+									<tr>
+										<td>职业：</td>
+										<td>
+											<input type="text" name="guest_job" placeholder="请输入职业" value="" />
+										</td>
+										<td>国籍：</td>
+										<td>
+											<select name="guest_country">
+												<option value="中国">中国</option>
+												<option value="中国">中国</option>
+												<option value="中国">中国</option>
+												<option value="中国">中国</option>
+												<option value="中国">中国</option>
+												<option value="中国">中国</option>
+												<option value="中国">中国</option>
+												<option value="中国">中国</option>
+											</select>
+										</td>
+									</tr>
+		
+									<tr>
+										<td>机构：</td>
+										<td>
+											<input type="text" name="guest_organization" placeholder="请输入机构名称" value="" />
+										</td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>护照号码：</td>
+										<td>
+											<input type="text" name="guest_job" placeholder="请输入护照号码" value="" />
+										</td>
+										<td>护照有效日期：</td>
+										<td>
+											<input type="text" class="datetimepicker-days" placeholder="请输入护照有效日期">
+										</td>
+									</tr>
+		
+									<tr>
+										<td>电子邮箱：</td>
+										<td>
+											<input type="email" name="guest_email" placeholder="请输入电子邮箱" value="" />
+										</td>
+										<td>传真：</td>
+										<td>
+											<input type="text" name="guest_country_code" placeholder="请输入传真" value="" />
+										</td>
+									</tr>
+		
+									<tr>
+										<td>联系地址：</td>
+										<td>
+											<input type="text" name="guest_address" placeholder="请输入联系地址" value="" />
+										</td>
+										<td>签发地点：</td>
+										<td>
+											<input type="text" name="guest_assign_place" placeholder="请输入签发地点" value="" />
+										</td>
+									</tr>
+		
+									<tr>
+										<td>入境日期：</td>
+										<td>
+											<input type="text" name="guest_address" class="datetimepicker-days" placeholder="请输入入境日期" value="" />
+										</td>
+										<td>预计中国境内逗留天数：</td>
+										<td>
+											<input type="number" placeholder="请输入天数">
+										</td>
+									</tr>
+		
+								</tbody>
+		
+							</table>
+		
+						</div>
+		
+						<div class="tab-pane fade" id="edit_activity_about_guest">
+		
+							<table class="table table-striped  table-hover table-responsive">
+		
+								<caption>
+									<div class="pull-left">
+										会后由会议安排赴外地参观考察
+									</div>
+								</caption>
+								<tbody id="select_visit_info">
+									<tr>
+										<td class="text-left">
+											<div>
+												<p>8月24号：</p>
+												<p class="ml10"><label><input type="radio" name="audit_routeId1" value="">A线：仁怀-赤水-桐梓-遵义-铜仁(贵州北线)-(8月24号)-限定人数(30)-已报名人数(20)</label></p>
+												<p class="ml10"><label><input type="radio" name="audit_routeId1" value="">A线：仁怀-赤水-桐梓-遵义-铜仁(贵州北线)-(8月24号)-限定人数(30)-已报名人数(20)</label></p>
+												<p class="ml10"><label><input type="radio" name="audit_routeId1" value="">A线：仁怀-赤水-桐梓-遵义-铜仁(贵州北线)-(8月24号)-限定人数(30)-已报名人数(20)</label></p>
+											</div>
+											<div>
+												<p>8月25号之后：</p>
+												<p class="ml10"><label><input type="radio" name="audit_routeId1" value="">A线：仁怀-赤水-桐梓-遵义-铜仁(贵州北线)-(8月25号-26号)-限定人数(30)-已报名人数(20)</label></p>
+												<p class="ml10"><label><input type="radio" name="audit_routeId1" value="">A线：仁怀-赤水-桐梓-遵义-铜仁(贵州北线)-(8月25号-28号)-限定人数(30)-已报名人数(20)</label></p>
+												<p class="ml10"><label><input type="radio" name="audit_routeId1" value="">A线：仁怀-赤水-桐梓-遵义-铜仁(贵州北线)-(8月25号-28号)-限定人数(30)-已报名人数(20)</label></p>
+											</div>
+										</td>
+		
+									</tr>
+								</tbody>
+		
+							</table>
+		
+						</div>
+		
+						<div class="tab-pane fade row-body" id="edit_accomodation_about_guest">
+		
+							<table class="table table-striped  table-hover table-responsive">
+		
+								<tbody>
+									<tr>
+		
+										<td width="30%">酒店名称:</td>
+		
+										<td>
+											<select>
+												<option>不限</option>
+												<option>香格里拉</option>
+												<option>人民酒店</option>
+												<option>重庆鸡公煲</option>
+											</select>
+										</td>
+		
+									</tr>
+									<tr>
+		
+										<td>酒店地址:</td>
+		
+										<td>
+											<input type="text" name="guest_living_time" placeholder="请输入酒店地址">
+										</td>
+		
+									</tr>
+		
+									<tr>
+		
+										<td>入住日期:</td>
+		
+										<td>
+											<input type="text" class="datetimepicker-days" name="guest_living_time" placeholder="请输入入住日期">
+										</td>
+		
+									</tr>
+		
+									<tr>
+										<td>离店日期：</td>
+		
+										<td>
+											<input type="text" class="datetimepicker-days" name="guest_leaving_time" placeholder="请输入离店日期">
+										</td>
+		
+									</tr>
+		
+									<tr>
+										<td>入住房型：</td>
+		
+										<td>
+											<label><input type="radio" name="living_room_type" value="豪华套房" />豪华套房</label>
+											<label><input type="radio" name="living_room_type" value="高级套房" />高级套房 </label>
+											<label><input type="radio" name="living_room_type" value="高级大床房" />高级大床房</label>
+											<label><input type="radio" name="living_room_type" value="高级双床房" />高级双床房</label>
+										</td>
+		
+									</tr>
+		
+									<tr>
+										<td>同宿人员安排：</td>
+										<td class="chose-accomadates">
+											<label><input type="radio" name="living_same_accomadation_type" value="0"/>指定同宿人员</label>
+											<label><input type="radio" name="living_same_accomadation_type" checked="checked" value="1"/>不与其他人员同宿</label>
+											<label><input type="radio" name="living_same_accomadation_type" value="2"/>大会随机分配同宿人员</label>
+										</td>
+		
+									</tr>
+		
+									<tr style="display: none;">
+										<td colspan="2">
+											<table  width="100%">
+		
+												<tr>
+													<td width="30%">
+														姓名：
+													</td>
+													<td>
+														<label><input type="text" name="accomadation_name_with_guest" value="" /></label>
+													</td>
+												</tr>
+		
+												<tr>
+													<td>
+														身份证/护照号码：
+													</td>
+													<td>
+														<label><input type="text" name="passport_with_guest" value="" /></label>
+													</td>
+												</tr>
+												<tr>
+													<td>同宿人员电子邮件：</td>
+													<td>
+														<label><input type="email" name="accomadation_email"></label>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+		
+									<tr>
+										<td>是否需要无烟楼层：</td>
+		
+										<td>
+											<label><input type="radio" name="living_room_about_smoking" value="smoking" />吸烟楼层</label>
+											<label><input type="radio" name="living_room_about_smoking" value="no_smoking" />不吸烟楼层</label>
+										</td>
+		
+									</tr>
+		
+								</tbody>
+		
+							</table>
+		
+						</div>
+		
+						<div class="tab-pane fade row-body" id="edit_traval_about_guest">
+		
+							<table class="table table-striped  table-hover table-responsive">
+		
+								<tbody>
+		
+									<tr>
+		
+										<td>抵达日期：</td>
+		
+										<td>
+											<input type="text" class="datetimepicker-days" name="guest_living_time" placeholder="请输入抵达日期">
+										</td>
+		
+									</tr>
+		
+									<tr>
+		
+										<td>抵达时间：</td>
+		
+										<td>
+											<input type="text" class="datetimepicker-hours" name="guest_living_time" placeholder="请输入抵达时间">
+										</td>
+		
+									</tr>
+		
+									<tr>
+		
+										<td>抵达站点：</td>
+		
+										<td>
+											<select name="destination">
+												<option value="aiport">广州白云国际机场</option>
+												<option value="train">广州高铁南站</option>
+												<option value="subway">广州火车东站</option>
+											</select>&nbsp;
+		
+										</td>
+		
+									</tr>
+		
+									<tr>
+		
+										<td>抵达航班（车次）号：</td>
+		
+										<td>
+											<input type="text" name="guest_arrive_tool_num" placeholder="请输入航班(车次)号" value="">
+										</td>
+		
+									</tr>
+		
+									<tr>
+		
+										<td>离开日期：</td>
+		
+										<td>
+											<input type="text" class="datetimepicker-days" name="guest_leaving_time" placeholder="请输入离开日期">
+										</td>
+		
+									</tr>
+		
+									<tr>
+		
+										<td>离开时间：</td>
+		
+										<td>
+											<input type="text" class="datetimepicker-hours" name="guest_leaving_time" placeholder="请输入离开时间">
+										</td>
+		
+									</tr>
+		
+									<tr>
+		
+										<td>离开站点：</td>
+		
+										<td>
+											<select name="leaving_destination">
+												<option value="aiport">广州白云国际机场</option>
+												<option value="train">广州高铁南站</option>
+												<option value="subway">广州火车东站</option>
+											</select>&nbsp;
+		
+										</td>
+		
+									</tr>
+		
+									<tr>
+		
+										<td>离开航班（车次）号：</td>
+		
+										<td>
+											<input type="text" name="guest_leave_tool_num" placeholder="请输入航班(车次)号" value="">
+										</td>
+		
+									</tr>
+		
+								</tbody>
+		
+							</table>
+		
+						</div>
+		
+					</div>
+	
+				</div>
+	
+			</div>
+				<!-- /.modal-content -->
+		</div>
+		<script src="bootstrap-3.3.4-dist/bootstrap-3.3.4-dist/js/bootstrap-datetimepicker.min.js"></script>
+		<script src="bootstrap-3.3.4-dist/bootstrap-3.3.4-dist/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+		<script type="text/javascript">
+			$('.datetimepicker-hours').datetimepicker({
+				format:'hh:ii:ss',
+				startView : 1,
+				autoclose : true,
+				language : 'zh-CN',
+				rtl : true,
+				keyboardNavigation : true,
+				forceParse : true
+			});
+			$('.datetimepicker-days').datetimepicker({
+				format:'yyyy-mm-dd',
+				minView : 2,
+				autoclose : true,
+				language : 'zh-CN',
+				rtl : false,
+				keyboardNavigation : true,
+				forceParse : true
+			});
+		</script>
+	</body>
+
+</html>

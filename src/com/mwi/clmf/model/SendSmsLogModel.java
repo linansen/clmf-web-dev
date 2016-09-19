@@ -1,0 +1,1 @@
+package com.mwi.clmf.model;import com.jfinal.plugin.activerecord.Model;@SuppressWarnings("serial")public class SendSmsLogModel extends Model<SendSmsLogModel> {	public static final SendSmsLogModel smsDao = new SendSmsLogModel();	}

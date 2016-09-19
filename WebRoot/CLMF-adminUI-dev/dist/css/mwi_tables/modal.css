@@ -1,0 +1,33 @@
+.tdWidth{
+	
+	width: 78% !important;
+	margin-left: 9px;
+	padding-left:16px ;
+}
+.tdTextAlign{
+	text-align: center;
+	font-size: 16px;
+	
+}
+.checkOk{
+	background-color: gray;
+	color: #5BC0DE;
+	
+}
+
+.row-body table.textLeft, .row-body table.textLeft th {
+    text-align: left !important;
+    
+}
+.row-body table.textLeft, .row-body table.textLeft th td{
+    border: solid 1px !important #3B5998; 
+    
+}
+
+.diningManageToll{
+	
+	color: red;
+	text-align: center; 
+	margin-top: 10px;
+	font-size: 16px;
+   }
